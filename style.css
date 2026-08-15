@@ -1,10 +1,9 @@
 /* =====================================================
-   GAMENEST — MOBILE PRODUCT FIX
+   GAMENEST — MOBILE PRODUCT LAYOUT FIX
    ===================================================== */
 
 @media (max-width: 680px) {
 
-    /* Prevent ANY horizontal page scrolling */
     html,
     body {
         width: 100%;
@@ -12,19 +11,7 @@
         overflow-x: hidden;
     }
 
-    /* Main containers */
-    .container,
-    .section,
-    .products,
-    .product-grid,
-    .cards,
-    .grid {
-        width: 100%;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* V-Bucks products — ONE COLUMN */
+    /* Main product containers */
     .product-grid,
     .products,
     .cards {
@@ -33,6 +20,7 @@
         width: 100% !important;
         max-width: 100% !important;
         gap: 18px !important;
+        box-sizing: border-box;
     }
 
     /* Product cards */
@@ -41,17 +29,17 @@
         width: 100% !important;
         max-width: 100% !important;
         min-width: 0 !important;
-        box-sizing: border-box;
         margin: 0 !important;
+        box-sizing: border-box;
     }
 
-    /* Product image area */
+    /* Product image container */
     .card .pic,
     .product-card .pic {
         width: 100% !important;
         max-width: 100% !important;
-        box-sizing: border-box;
         overflow: hidden;
+        box-sizing: border-box;
     }
 
     /* Product images */
@@ -89,19 +77,24 @@
     /* Order button */
     .card .order,
     .product-card .order {
+        display: block;
         width: 100% !important;
         max-width: 100% !important;
-        box-sizing: border-box;
         min-height: 58px;
+        box-sizing: border-box;
     }
 
-    /* Crew products — also one column */
+    /* =================================================
+       FORTNITE CREW
+       ================================================= */
+
     .crew-cards {
         display: grid !important;
         grid-template-columns: minmax(0, 1fr) !important;
         gap: 18px !important;
         width: 100% !important;
         max-width: 100% !important;
+        box-sizing: border-box;
     }
 
     .crew-cards article {
@@ -111,11 +104,11 @@
         box-sizing: border-box;
     }
 
-    /* Crew image */
     .crew-img {
         width: 100% !important;
         max-width: 100% !important;
         overflow: hidden;
+        box-sizing: border-box;
     }
 
     .crew-img img {
@@ -126,7 +119,7 @@
         object-fit: contain !important;
     }
 
-    /* Prevent long text from causing overflow */
+    /* Prevent text from creating horizontal scrolling */
     h1,
     h2,
     h3,
@@ -136,24 +129,16 @@
         overflow-wrap: break-word;
     }
 
-    /* Section spacing */
     section {
         width: 100%;
         max-width: 100%;
         box-sizing: border-box;
     }
-
-    /* Keep mobile spacing compact */
-    .products,
-    .product-grid {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
 }
 
 
 /* =====================================================
-   SMALL PHONES — 360px / 390px
+   SMALL PHONES — 390px AND BELOW
    ===================================================== */
 
 @media (max-width: 390px) {
@@ -177,12 +162,11 @@
     .product-card .pic img {
         max-height: 240px;
     }
-
 }
 
 
 /* =====================================================
-   VERY SMALL PHONES
+   VERY SMALL PHONES — 360px
    ===================================================== */
 
 @media (max-width: 360px) {
@@ -190,11 +174,6 @@
     .card,
     .product-card {
         padding: 16px !important;
-    }
-
-    .card .pic,
-    .product-card .pic {
-        margin-bottom: 18px;
     }
 
     .card h3,
@@ -207,5 +186,4 @@
         min-height: 54px;
         font-size: 16px;
     }
-
        }
