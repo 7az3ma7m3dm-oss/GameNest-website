@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>GameNest.shop — Fortnite Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="GameNest home">
+    <span class="brand-mark">G</span>
+    <span>GameNest <em>.shop</em></span>
+  </a>
+
+  <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#vbucks">V-Bucks</a>
+    <a href="#crew">Fortnite Crew</a>
+    <a href="#how">How It Works</a>
+    <a class="nav-order" href="#vbucks">Order Now <b>↗</b></a>
+  </nav>
+</header>
+
+<main id="home">
+
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">01 / GAMENEST STORE</div>
+      <h1>Power up your<br><span>Fortnite account.</span></h1>
+      <p>Premium Fortnite products, clear EGP pricing, simple ordering and direct support.</p>
+      <div class="hero-actions">
+        <a class="primary-btn" href="#vbucks">Shop V-Bucks <span>↗</span></a>
+        <a class="ghost-btn" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-orb">V</div>
+      <div class="hero-card-bottom">
+        <span>FAST DELIVERY</span>
+        <span>TRUSTED SERVICE</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="vbucks">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">02 / V-BUCKS</div>
+        <h2>Choose your <span>V-Bucks.</span></h2>
+        <p>Pick a package, press order, then send the generated order information to the group admin.</p>
+      </div>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="product-number">01</div>
+        <div>
+          <h3>800 V-Bucks</h3>
+          <p>Quick top-up</p>
+        </div>
+        <strong>200 <small>EGP</small></strong>
+        <button class="order-btn" data-product="800 V-Bucks" data-price="200 EGP">Order <span>↗</span></button>
+      </article>
+
+      <article class="product-card featured">
+        <div class="product-number">02</div>
+        <div>
+          <h3>2,400 V-Bucks</h3>
+          <p>Popular package</p>
+        </div>
+        <strong>500 <small>EGP</small></strong>
+        <button class="order-btn" data-product="2,400 V-Bucks" data-price="500 EGP">Order <span>↗</span></button>
+      </article>
+
+      <article class="product-card">
+        <div class="product-number">03</div>
+        <div>
+          <h3>4,500 V-Bucks</h3>
+          <p>Best value</p>
+        </div>
+        <strong>810 <small>EGP</small></strong>
+        <button class="order-btn" data-product="4,500 V-Bucks" data-price="810 EGP">Order <span>↗</span></button>
+      </article>
+
+      <article class="product-card">
+        <div class="product-number">04</div>
+        <div>
+          <h3>12,500 V-Bucks</h3>
+          <p>Maximum package</p>
+        </div>
+        <strong>1,820 <small>EGP</small></strong>
+        <button class="order-btn" data-product="12,500 V-Bucks" data-price="1,820 EGP">Order <span>↗</span></button>
+      </article>
+    </div>
+  </section>
+
+  <section class="crew-section" id="crew">
+    <div class="section-head">
+      <div>
+        <div class="eyebrow">03 / FORTNITE CREW</div>
+        <h2>Stay in <span>the Crew.</span></h2>
+        <p>Choose your duration and keep your Fortnite experience moving.</p>
+      </div>
+    </div>
+
+    <div class="crew-list">
+      <article class="crew-row">
+        <span class="row-number">01</span><h3>1 Month</h3><strong>199 <small>EGP</small></strong>
+        <button class="order-btn light" data-product="Fortnite Crew — 1 Month" data-price="199 EGP">Order <span>↗</span></button>
+      </article>
+      <article class="crew-row">
+        <span class="row-number">02</span><h3>3 Months</h3><strong>559 <small>EGP</small></strong>
+        <button class="order-btn light" data-product="Fortnite Crew — 3 Months" data-price="559 EGP">Order <span>↗</span></button>
+      </article>
+      <article class="crew-row">
+        <span class="row-number">03</span><h3>6 Months</h3><strong>979 <small>EGP</small></strong>
+        <button class="order-btn light" data-product="Fortnite Crew — 6 Months" data-price="979 EGP">Order <span>↗</span></button>
+      </article>
+      <article class="crew-row">
+        <span class="row-number">04</span><h3>12 Months</h3><strong>1,749 <small>EGP</small></strong>
+        <button class="order-btn light" data-product="Fortnite Crew — 12 Months" data-price="1,749 EGP">Order <span>↗</span></button>
+      </article>
+    </div>
+  </section>
+
+  <section class="dark-section" id="how">
+    <div class="eyebrow">04 / HOW IT WORKS</div>
+    <h2>Four steps. <span>That's it.</span></h2>
+    <div class="steps">
+      <div><b>01</b><h3>Choose your product</h3><p>Pick the V-Bucks package or Fortnite Crew duration you want.</p></div>
+      <div><b>02</b><h3>Click Order</h3><p>The order window prepares your exact product and price.</p></div>
+      <div><b>03</b><h3>Copy your order</h3><p>Copy the generated order information with one tap.</p></div>
+      <div><b>04</b><h3>Text the group admin</h3><p>Open the WhatsApp group and send your copied order to the admin to complete it.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <strong>GameNest <span>.shop</span></strong>
+  <p>Fortnite products • EGP pricing • Direct support</p>
+</footer>
+
+<div class="modal-backdrop" id="modal" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="close-btn" id="closeModal" aria-label="Close">×</button>
+    <div class="eyebrow">ORDER / GAMENEST</div>
+    <h2 id="modalTitle">800 V-Bucks</h2>
+    <div class="modal-price" id="modalPrice">200 EGP</div>
+
+    <label for="customerName">YOUR NAME / EPIC USERNAME</label>
+    <input id="customerName" type="text" placeholder="Enter your name or Epic username" autocomplete="name">
+
+    <label>ORDER INFORMATION</label>
+    <textarea id="orderText" readonly></textarea>
+
+    <div class="notice">
+      <b>Next step</b>
+      <span>Copy your order, open the WhatsApp group, then <strong>text the admin</strong> with the copied information to complete your order.</span>
+    </div>
+
+    <div class="modal-actions">
+      <button class="copy-btn" id="copyBtn">Copy Order Information <span id="copyIcon">⧉</span></button>
+      <a class="whatsapp-btn" id="whatsappBtn" href="https://chat.whatsapp.com/FhSOnjSeSNCHa52MozOqWm?s=cl&p=a&ilr=0&fbclid=PAT01DUATtsppwZG9mAmV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp7nmnVaxlZadRfY6tShvljgJ5V8rrrvpjAHGowAGToCKXVNQE20Xd5CP0HQq_aem_A-0Lnm6SjvUhR-QN0rPNgg" target="_blank" rel="noopener">Open WhatsApp Group <span>↗</span></a>
+    </div>
+  </div>
+</div>
+
+<script>
+(() => {
+  const modal = document.getElementById('modal');
+  const closeModal = document.getElementById('closeModal');
+  const nameInput = document.getElementById('customerName');
+  const orderText = document.getElementById('orderText');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalPrice = document.getElementById('modalPrice');
+  const copyBtn = document.getElementById('copyBtn');
+  const menuBtn = document.getElementById('menuBtn');
+  const nav = document.getElementById('nav');
+
+  let currentProduct = '';
+  let currentPrice = '';
+
+  function makeOrderId() {
+    return 'GN-' + Math.random().toString(36).slice(2, 8).toUpperCase();
+  }
+
+  function updateOrder() {
+    const customer = nameInput.value.trim() || 'Not provided';
+    orderText.value =
+`Hello GameNest! 👋
+
+I would like to place this order.
+
+Order ID: ${window.gnOrderId || 'GN-ORDER'}
+Customer: ${customer}
+Product: ${currentProduct}
+Price: ${currentPrice}
+
+Please send me the payment instructions.`;
+  }
+
+  function openOrder(product, price) {
+    currentProduct = product;
+    currentPrice = price;
+    window.gnOrderId = makeOrderId();
+    modalTitle.textContent = product;
+    modalPrice.textContent = price;
+    nameInput.value = '';
+    updateOrder();
+    modal.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    setTimeout(() => nameInput.focus(), 180);
+  }
+
+  function close() {
+    modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  document.querySelectorAll('.order-btn').forEach(btn => {
+    btn.addEventListener('click', () => openOrder(btn.dataset.product, btn.dataset.price));
+  });
+
+  nameInput.addEventListener('input', updateOrder);
+  closeModal.addEventListener('click', close);
+  modal.addEventListener('click', e => { if (e.target === modal) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+  copyBtn.addEventListener('click', async () => {
+    updateOrder();
+    try {
+      await navigator.clipboard.writeText(orderText.value);
+    } catch {
+      orderText.select();
+      document.execCommand('copy');
+    }
+    const old = copyBtn.innerHTML;
+    copyBtn.innerHTML = 'Copied! ✓';
+    copyBtn.classList.add('copied');
+    setTimeout(() => {
+      copyBtn.innerHTML = old;
+      copyBtn.classList.remove('copied');
+    }, 1800);
+  });
+
+  menuBtn.addEventListener('click', () => {
+    const open = nav.classList.toggle('mobile-open');
+    menuBtn.setAttribute('aria-expanded', open);
+  });
+
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    nav.classList.remove('mobile-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+  }));
+})();
+</script>
+</body>
+</html>
