@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050505">
+  <title>GameNest.shop — Fortnite Store</title>
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="GameNest home">
+        <img src="./favicon.png" alt="GameNest logo">
+        <span>GameNest</span><b>.shop</b>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#vbucks">V-Bucks</a>
+        <a href="#crew">Fortnite Crew</a>
+        <a href="#payment">Payment</a>
+        <a href="#how">How It Works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-order" href="#vbucks">Order Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">FORTNITE STORE</div>
+        <h1>Power up your<br><span>Fortnite</span> account.</h1>
+        <p>Premium Fortnite products, clear EGP pricing, simple ordering and reliable service from GameNest.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#vbucks">Shop V-Bucks <span>→</span></a>
+          <a class="btn btn-dark" href="#crew">View Crew <span>→</span></a>
+        </div>
+        <div class="trust-row">
+          <span>✓ Fast Delivery</span>
+          <span>✓ Secure Ordering</span>
+          <span>✓ Trusted Service</span>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-label">GAME<br>NEST</div>
+        <img src="./vbucks.png" alt="V-Bucks" loading="eager">
+      </div>
+    </section>
+
+    <section class="why section-light" id="why">
+      <div class="section-head">
+        <div class="eyebrow">01 / WHY GAMENEST</div>
+        <h2>A cleaner way to <span>shop Fortnite.</span></h2>
+      </div>
+      <div class="feature-grid">
+        <article><strong>01</strong><h3>Fast delivery</h3><p>Orders are processed quickly after payment confirmation.</p></article>
+        <article><strong>02</strong><h3>Simple ordering</h3><p>Choose a package and contact GameNest directly.</p></article>
+        <article><strong>03</strong><h3>Clear pricing</h3><p>Every package has an upfront EGP price.</p></article>
+        <article><strong>04</strong><h3>Multiple payments</h3><p>Vodafone Cash, WE Pay, InstaPay and Telda.</p></article>
+        <article><strong>05</strong><h3>Friendly support</h3><p>Ask us anything before placing your order.</p></article>
+        <article><strong>06</strong><h3>Reliable service</h3><p>A focused store experience built around communication.</p></article>
+      </div>
+    </section>
+
+    <section class="products section-dark" id="vbucks">
+      <div class="section-head dark">
+        <div class="eyebrow">02 / V-BUCKS</div>
+        <h2>V-Bucks <span>Store</span></h2>
+        <p>Choose the package that fits your account and order directly through GameNest.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image"><img src="./vbucks.png" alt="800 V-Bucks" loading="lazy"></div>
+          <div class="product-info"><small>V-BUCKS</small><h3>800 V-Bucks</h3><div class="price">200 <em>EGP</em></div>
+          <button class="order-btn" data-product="800 V-Bucks" data-price="200 EGP">Order Now <span>→</span></button></div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="./vbucks.png" alt="2,400 V-Bucks" loading="lazy"></div>
+          <div class="product-info"><small>V-BUCKS</small><h3>2,400 V-Bucks</h3><div class="price">500 <em>EGP</em></div>
+          <button class="order-btn" data-product="2,400 V-Bucks" data-price="500 EGP">Order Now <span>→</span></button></div>
+        </article>
+
+        <article class="product-card popular">
+          <div class="popular-badge">POPULAR</div>
+          <div class="product-image"><img src="./vbucks.png" alt="4,500 V-Bucks" loading="lazy"></div>
+          <div class="product-info"><small>V-BUCKS</small><h3>4,500 V-Bucks</h3><div class="price">810 <em>EGP</em></div>
+          <button class="order-btn" data-product="4,500 V-Bucks" data-price="810 EGP">Order Now <span>→</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="crew section-light" id="crew">
+      <div class="section-head">
+        <div class="eyebrow">03 / FORTNITE CREW</div>
+        <h2>Stay in the <span>crew.</span></h2>
+        <p>Pick a Fortnite Crew duration and order in a few clicks.</p>
+      </div>
+      <div class="crew-layout">
+        <div class="crew-art"><img src="./crew.png" alt="Fortnite Crew" loading="lazy"></div>
+        <div class="crew-list">
+          <button class="crew-option" data-product="Fortnite Crew — 1 Month" data-price="199 EGP"><i>01</i><span><b>1 Month</b><small>199 EGP</small></span><strong>Order →</strong></button>
+          <button class="crew-option" data-product="Fortnite Crew — 3 Months" data-price="559 EGP"><i>02</i><span><b>3 Months</b><small>559 EGP</small></span><strong>Order →</strong></button>
+          <button class="crew-option" data-product="Fortnite Crew — 6 Months" data-price="979 EGP"><i>03</i><span><b>6 Months</b><small>979 EGP</small></span><strong>Order →</strong></button>
+          <button class="crew-option" data-product="Fortnite Crew — 12 Months" data-price="1,749 EGP"><i>04</i><span><b>12 Months</b><small>1,749 EGP</small></span><strong>Order →</strong></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="payment section-dark" id="payment">
+      <div class="section-head dark">
+        <div class="eyebrow">04 / PAYMENT</div>
+        <h2>Pay your <span>way.</span></h2>
+        <p>Select your package, contact GameNest, complete payment, then receive your order.</p>
+      </div>
+      <div class="payment-grid">
+        <div>VODAFONE CASH</div><div>WE PAY</div><div>INSTAPAY</div><div>TELDA</div>
+      </div>
+    </section>
+
+    <section class="how section-light" id="how">
+      <div class="section-head"><div class="eyebrow">05 / HOW IT WORKS</div><h2>Four steps. <span>That's it.</span></h2></div>
+      <div class="steps">
+        <article><b>01</b><h3>Choose your product</h3><p>Pick a V-Bucks package or Fortnite Crew duration.</p></article>
+        <article><b>02</b><h3>Click Order Now</h3><p>The order window prepares your exact product details.</p></article>
+        <article><b>03</b><h3>Contact GameNest</h3><p>Copy the order or send it directly through WhatsApp.</p></article>
+        <article><b>04</b><h3>Pay & receive</h3><p>Complete payment and receive your order.</p></article>
+      </div>
+    </section>
+
+    <section class="faq section-dark" id="faq">
+      <div class="section-head dark"><div class="eyebrow">06 / FAQ</div><h2>Questions? <span>Answered.</span></h2></div>
+      <div class="faq-list">
+        <details><summary>How do I order?</summary><p>Choose a product, click Order Now, then use Copy Order Information or WhatsApp to contact GameNest.</p></details>
+        <details><summary>How fast is delivery?</summary><p>Orders are processed after payment confirmation. Delivery timing can vary, so contact GameNest for the current estimate.</p></details>
+        <details><summary>What payment methods are supported?</summary><p>GameNest supports Vodafone Cash, WE Pay, InstaPay and Telda.</p></details>
+        <details><summary>Can I order V-Bucks?</summary><p>Yes. Choose one of the V-Bucks packages shown in the store.</p></details>
+        <details><summary>Can I order Fortnite Crew?</summary><p>Yes. Select the Crew duration you want and press Order.</p></details>
+        <details><summary>How do I contact support?</summary><p>Use the WhatsApp button in the order window or the Contact section.</p></details>
+      </div>
+    </section>
+
+    <section class="contact section-light" id="contact">
+      <div class="contact-box">
+        <div><div class="eyebrow">07 / GAMENEST</div><h2>Ready to <span>power up?</span></h2><p>Choose your package and start your GameNest order.</p></div>
+        <div class="contact-actions"><a class="btn btn-light" href="#vbucks">Order Now →</a><a class="btn btn-outline" id="contactWhatsApp" href="#">Contact GameNest</a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <a class="brand" href="#home"><img src="./favicon.png" alt="GameNest logo"><span>GameNest</span><b>.shop</b></a>
+      <p>Premium Fortnite products with clear pricing and simple ordering.</p>
+      <div class="footer-links"><a href="#vbucks">V-Bucks</a><a href="#crew">Fortnite Crew</a><a href="#payment">Payment</a><a href="#faq">FAQ</a></div>
+    </div>
+    <div class="footer-bottom">© 2026 GameNest.shop. All rights reserved.</div>
+  </footer>
+
+  <div class="modal-backdrop" id="orderModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="eyebrow">GAMENEST / ORDER</div>
+      <h2 id="modalTitle">Your order</h2>
+      <div class="modal-price" id="modalPrice"></div>
+      <textarea id="orderMessage" readonly aria-label="Order information"></textarea>
+      <div class="modal-actions">
+        <button class="btn btn-light" id="copyOrder">Copy Order Information</button>
+        <a class="btn btn-whatsapp" id="whatsappOrder" href="#" target="_blank" rel="noopener">WhatsApp Order ↗</a>
+      </div>
+      <div class="copy-status" id="copyStatus" aria-live="polite"></div>
+    </div>
+  </div>
+
+  <script>
+  (() => {
+    "use strict";
+
+    /* Add your WhatsApp number here if you want direct opening.
+       Example: const WHATSAPP_NUMBER = "201234567890";
+       Leave empty to use WhatsApp's generic share/order link. */
+    const WHATSAPP_NUMBER = "";
+    const WHATSAPP_GROUP = "https://chat.whatsapp.com/FhSOnjSeSNCHa52MozOqWm?s=cl&p=a&ilr=0&fbclid=PAT01DUATtsppwZG9mAmV4dG4DYWVtAjEwAHNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABp7nmnVaxlZadRfY6tShvljgJ5V8rrrvpjAHGowAGToCKXVNQE20Xd5CP0HQq_aem_A-0Lnm6SjvUhR-QN0rPNgg";
+
+    const modal = document.getElementById("orderModal");
+    const title = document.getElementById("modalTitle");
+    const price = document.getElementById("modalPrice");
+    const message = document.getElementById("orderMessage");
+    const copy = document.getElementById("copyOrder");
+    const wa = document.getElementById("whatsappOrder");
+    const status = document.getElementById("copyStatus");
+    const close = document.getElementById("modalClose");
+    const menu = document.getElementById("menuToggle");
+    const nav = document.getElementById("mainNav");
+    const contactWa = document.getElementById("contactWhatsApp");
+
+    function whatsappURL(text) {
+      const encoded = encodeURIComponent(text);
+      return WHATSAPP_NUMBER.trim()
+        ? "https://wa.me/" + WHATSAPP_NUMBER.trim() + "?text=" + encoded
+        : "https://wa.me/?text=" + encoded;
+    }
+
+    function openOrder(product, productPrice) {
+      const order = "Hello GameNest! 👋\n\nI would like to order:\n\nProduct: " +
+        product + "\nPrice: " + productPrice +
+        "\n\nPlease let me know the next steps.";
+
+      title.textContent = product;
+      price.textContent = "Price: " + productPrice;
+      message.value = order;
+      wa.href = WHATSAPP_GROUP;
+      status.textContent = "";
+      modal.classList.add("active");
+      modal.setAttribute("aria-hidden", "false");
+      document.body.classList.add("modal-open");
+      setTimeout(() => copy.focus(), 100);
+    }
+
+    document.querySelectorAll("[data-product][data-price]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        openOrder(btn.dataset.product, btn.dataset.price);
+      });
+    });
+
+    function closeModal() {
+      modal.classList.remove("active");
+      modal.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("modal-open");
+    }
+
+    close.addEventListener("click", closeModal);
+    modal.addEventListener("click", e => {
+      if (e.target === modal) closeModal();
+    });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape") closeModal();
+    });
+
+    copy.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(message.value);
+        status.textContent = "Copied successfully ✓";
+      } catch {
+        message.select();
+        message.setSelectionRange(0, message.value.length);
+        const ok = document.execCommand("copy");
+        status.textContent = ok ? "Copied successfully ✓" : "Please copy the text manually.";
+      }
+      setTimeout(() => status.textContent = "", 1800);
+    });
+
+    const generalText = "Hello GameNest! 👋\n\nI would like to contact GameNest about an order.";
+    contactWa.href = WHATSAPP_GROUP;
+
+    menu.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      menu.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    nav.querySelectorAll("a").forEach(a => {
+      a.addEventListener("click", () => {
+        nav.classList.remove("open");
+        menu.setAttribute("aria-expanded", "false");
+      });
+    });
+  })();
+  </script>
+</body>
+</html>
