@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#15130F">
+  <meta name="description" content="GameNest.shop — order Fortnite V-Bucks and Crew like a counter ticket, hand it to a real admin on Instagram.">
+  <title>GameNest.shop — Order Counter for Fortnite</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="GameNest home">
+      <span class="brand-mark">GN</span>
+      <span class="brand-word">GameNest<span class="muted">.shop</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="#vbucks">V-Bucks</a><a href="#crew">Crew</a><a href="#why">Why Us</a>
+      <a href="#how">How It Works</a><a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#vbucks">Open a ticket <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO: boarding-pass / ticket concept -->
+    <section class="hero section">
+      <div class="ticket-hero reveal">
+        <div class="ticket-hero-top">
+          <span class="th-label">ADMIT ONE · FORTNITE</span>
+          <span class="th-serial">NO. GN‑0001</span>
+        </div>
+
+        <div class="ticket-hero-body">
+          <div class="ticket-hero-visual"><img src="vbucks.png" alt="V-Bucks"></div>
+          <p class="eyebrow"><span class="dot"></span> Manual order counter — not an auto checkout</p>
+          <h1>Take a ticket.<br><em>Get your V‑Bucks.</em></h1>
+          <p class="hero-text">GameNest.shop works like a real counter: pick your pack, fill in your ticket, and hand it to the person on the other side of Instagram. No card forms, no store credentials, no bots — just you and the admin.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#vbucks">Pick a pack <span>↗</span></a>
+            <a class="text-btn" href="#how">See the counter flow <span>↓</span></a>
+          </div>
+        </div>
+
+        <div class="perforation" aria-hidden="true"></div>
+
+        <div class="ticket-hero-stub">
+          <div><strong>08</strong><span>packs on<br>the board</span></div>
+          <div><strong>1</strong><span>ticket per<br>order</span></div>
+          <div><strong>24/7</strong><span>counter open<br>for tickets</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK STRIP: the deal in three beats -->
+    <section class="deal section" id="why">
+      <div class="section-label reveal">THE DEAL</div>
+      <div class="deal-grid">
+        <article class="deal-card reveal">
+          <span class="stamp-icon">①</span>
+          <h3>You fill the ticket</h3>
+          <p>Your pack, price and username get written onto one clean order slip — nothing hidden, nothing pre-checked.</p>
+        </article>
+        <article class="deal-card reveal">
+          <span class="stamp-icon">②</span>
+          <h3>You carry it over</h3>
+          <p>One tap copies the ticket. You bring it to the GameNest Instagram yourself — we never ask for your Epic password.</p>
+        </article>
+        <article class="deal-card reveal">
+          <span class="stamp-icon">③</span>
+          <h3>A person answers</h3>
+          <p>The admin reads your ticket, confirms the price, and walks you through payment. Real replies, not a script.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- V-BUCKS STORE: ticket stubs -->
+    <section class="store section" id="vbucks">
+      <div class="section-head reveal">
+        <div><div class="section-label">THE BOARD</div><h2>Choose your<br><em>V‑Bucks.</em></h2></div>
+        <p>Four amounts, four fixed prices in EGP. Whatever you pick opens the same one‑page ticket.</p>
+      </div>
+      <div class="product-grid">
+        <article class="ticket-stub reveal" data-product="800 V-Bucks" data-price="200">
+          <div class="stub-row"><span>PACK 01</span><span>V‑BUCKS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <div class="stub-visual"><img src="vbucks.png" alt="V-Bucks"></div>
+          <h3>800</h3><p class="stub-unit">V‑Bucks</p>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">200 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+
+        <article class="ticket-stub featured reveal" data-product="2,400 V-Bucks" data-price="500">
+          <div class="badge">MOST TAKEN</div>
+          <div class="stub-row"><span>PACK 02</span><span>V‑BUCKS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <div class="stub-visual"><img src="vbucks.png" alt="V-Bucks"></div>
+          <h3>2,400</h3><p class="stub-unit">V‑Bucks</p>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">500 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+
+        <article class="ticket-stub reveal" data-product="4,500 V-Bucks" data-price="810">
+          <div class="stub-row"><span>PACK 03</span><span>V‑BUCKS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <div class="stub-visual"><img src="vbucks.png" alt="V-Bucks"></div>
+          <h3>4,500</h3><p class="stub-unit">V‑Bucks</p>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">810 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+
+        <article class="ticket-stub reveal" data-product="12,500 V-Bucks" data-price="1820">
+          <div class="stub-row"><span>PACK 04</span><span>V‑BUCKS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <div class="stub-visual"><img src="vbucks.png" alt="V-Bucks"></div>
+          <h3>12,500</h3><p class="stub-unit">V‑Bucks</p>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">1,820 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- CREW: ticket stubs, subscription style -->
+    <section class="crew section" id="crew">
+      <div class="section-head reveal">
+        <div><div class="section-label">THE SEASON PASS</div><h2>Stay in the<br><em>Crew.</em></h2></div>
+        <p>Pick a duration. Same ticket, same counter, same admin.</p>
+      </div>
+      <div class="crew-grid">
+        <article class="ticket-stub crew-stub reveal" data-product="Fortnite Crew — 1 Month" data-price="199">
+          <div class="stub-row"><span>01</span><span>MONTH</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <h3>1 Month</h3>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">199 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+        <article class="ticket-stub crew-stub reveal" data-product="Fortnite Crew — 3 Months" data-price="559">
+          <div class="stub-row"><span>02</span><span>MONTHS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <h3>3 Months</h3>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">559 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+        <article class="ticket-stub crew-stub featured reveal" data-product="Fortnite Crew — 6 Months" data-price="979">
+          <div class="badge">MOST TAKEN</div>
+          <div class="stub-row"><span>03</span><span>MONTHS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <h3>6 Months</h3>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">979 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+        <article class="ticket-stub crew-stub reveal" data-product="Fortnite Crew — 12 Months" data-price="1749">
+          <div class="stub-row"><span>04</span><span>MONTHS</span></div>
+          <div class="stub-punch" aria-hidden="true"></div>
+          <h3>12 Months</h3>
+          <div class="stub-perf" aria-hidden="true"></div>
+          <div class="stub-price">1,749 <small>EGP</small></div>
+          <button class="btn product-btn order-btn">Open ticket <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS: counter queue timeline -->
+    <section class="how section" id="how">
+      <div class="section-head reveal">
+        <div><div class="section-label">THE COUNTER</div><h2>From ticket<br><em>to chat.</em></h2></div>
+        <p>Six short steps. No account, no stored card, no checkout maze.</p>
+      </div>
+      <div class="queue">
+        <div class="queue-line" aria-hidden="true"></div>
+        <div class="queue-item reveal"><span>01</span><div><b>PICK</b><h3>Choose a pack or Crew length</h3><p>Every price is shown up front — nothing changes once you're at the counter.</p></div></div>
+        <div class="queue-item reveal"><span>02</span><div><b>FILL</b><h3>Add your Fortnite / Epic username</h3><p>That's the only detail your ticket needs.</p></div></div>
+        <div class="queue-item reveal"><span>03</span><div><b>STAMP</b><h3>Copy your ticket</h3><p>A ticket number and full order summary are generated for you.</p></div></div>
+        <div class="queue-item reveal"><span>04</span><div><b>CARRY</b><h3>Open GameNest on Instagram</h3><p>The official GameNest page — link is right there in your ticket.</p></div></div>
+        <div class="queue-item reveal"><span>05</span><div><b>HAND OFF</b><h3>Paste your ticket to the admin</h3><p>Send the copied text straight into the chat.</p></div></div>
+        <div class="queue-item reveal"><span>06</span><div><b>SETTLE UP</b><h3>Pay the admin directly</h3><p>They confirm your order and walk you through payment.</p></div></div>
+      </div>
+    </section>
+
+    <!-- PAYMENTS -->
+    <section class="payments section">
+      <div class="payment-wrap reveal">
+        <div>
+          <div class="section-label">ACCEPTED AT THE COUNTER</div>
+          <h2>Payment happens<br><em>with the admin.</em></h2>
+          <p>There's no card field on this site by design. Once you've messaged us on Instagram, the admin takes it from there.</p>
+        </div>
+        <div class="payment-grid">
+          <div>Vodafone<br><strong>Cash</strong></div>
+          <div>WE<br><strong>Pay</strong></div>
+          <div>Insta<br><strong>Pay</strong></div>
+          <div>Telda<br><strong>Pay</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="section-head reveal">
+        <div><div class="section-label">SMALL PRINT</div><h2>Questions,<br><em>answered.</em></h2></div>
+        <p>Everything people ask before their first ticket.</p>
+      </div>
+      <div class="faq-list">
+        <details class="reveal"><summary>How do I actually order?<span>+</span></summary><p>Pick a pack, tap Open ticket, add your Fortnite/Epic username, then use Copy Ticket and open the GameNest Instagram to send it.</p></details>
+        <details class="reveal"><summary>Do I need to create an account?<span>+</span></summary><p>No. Only your Fortnite/Epic username goes on the ticket. The admin handles the rest of the order in chat.</p></details>
+        <details class="reveal"><summary>Where does my ticket actually go?<span>+</span></summary><p>Nowhere until you send it — copying it doesn't submit anything. You paste it yourself to the GameNest admin in an Instagram DM.</p></details>
+        <details class="reveal"><summary>Can I pay on the website?<span>+</span></summary><p>No, and that's intentional — this site never asks for payment details. Payment is arranged directly with the admin after you join the group.</p></details>
+        <details class="reveal"><summary>Which payment methods work?<span>+</span></summary><p>Vodafone Cash, WE Pay, InstaPay and Telda. The admin will guide you through whichever one you use.</p></details>
+        <details class="reveal"><summary>What if I never got a reply?<span>+</span></summary><p>Keep your copied ticket text — it has your order number on it — and message the admin again in the group with the same ticket.</p></details>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta section">
+      <div class="cta-box reveal">
+        <div class="cta-perf" aria-hidden="true"></div>
+        <div class="section-label">LAST CALL</div>
+        <h2>Your ticket's<br><em>waiting.</em></h2>
+        <p>Pick a pack, fill it in, and take it to the counter.</p>
+        <a class="btn light big" href="#vbucks">Open a ticket <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-main">
+      <a class="brand" href="#top"><span class="brand-mark">GN</span><span class="brand-word">GameNest<span class="muted">.shop</span></span></a>
+      <p>A ticket counter for Fortnite,<br>not a checkout page.</p>
+      <div class="footer-links">
+        <a href="#vbucks">V-Bucks</a><a href="#crew">Crew</a><a href="#how">How It Works</a><a href="#faq">FAQ</a>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/gamenestshop/">Instagram ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 GameNest.shop</span><span>Every order starts as a ticket, not a transaction.</span></div>
+  </footer>
+
+  <!-- ORDER MODAL — kept functionally identical, restyled as a ticket being filled in -->
+  <div class="modal" id="orderModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" aria-label="Close">×</button>
+
+      <div class="modal-label">TICKET / GAMENEST</div>
+      <h2 id="modalTitle"><span id="modalProductTitle">12,500 V-Bucks</span></h2>
+      <div class="modal-price" id="modalPrice">1,820 EGP</div>
+
+      <div class="modal-field">
+        <label for="username">YOUR NAME / USERNAME</label>
+        <input id="username" name="username" autocomplete="off" maxlength="50"
+               placeholder="Enter your name or Epic username" required>
+      </div>
+
+      <div class="order-info-label">TICKET DETAILS</div>
+      <div class="order-info-box">
+        <pre id="orderText"></pre>
+      </div>
+
+      <div class="result-actions">
+        <button class="modal-action copy-btn" id="copyBtn" type="button">
+          <span>Copy Ticket</span><b>▣</b>
+        </button>
+        <a class="modal-action instagram-btn" target="_blank" rel="noopener"
+           href="https://www.instagram.com/gamenestshop/">
+          <span>Open Instagram</span><b>↗</b>
+        </a>
+      </div>
+
+      <p class="copy-note" id="copyNote">
+        Copy your ticket, open GameNest on Instagram, then paste it to the admin to complete your order.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('orderModal');
+    const username = document.getElementById('username');
+    const modalProductTitle = document.getElementById('modalProductTitle');
+    const modalPrice = document.getElementById('modalPrice');
+    const orderText = document.getElementById('orderText');
+    const copyBtn = document.getElementById('copyBtn');
+    const copyNote = document.getElementById('copyNote');
+    let activeProduct = null;
+    let activeOrderId = null;
+
+    function makeOrderId() {
+      const now = new Date();
+      const stamp = now.getFullYear().toString().slice(-2) +
+        String(now.getMonth()+1).padStart(2,'0') +
+        String(now.getDate()).padStart(2,'0');
+      const random = Math.random().toString(36).slice(2,7).toUpperCase();
+      return `GN-${stamp}-${random}`;
+    }
+
+    function buildOrderText() {
+      if (!activeProduct || !activeOrderId) return '';
+      const customer = username.value.trim() || 'Not provided';
+      const price = Number(activeProduct.price).toLocaleString('en-US');
+
+      return `GameNest Ticket 🎟️
+
+Ticket No: ${activeOrderId}
+Customer: ${customer}
+Product: ${activeProduct.product}
+Price: ${price} EGP
+
+I'm bringing this ticket to the GameNest Instagram.
+Please confirm and assist me with payment.`;
+    }
+
+    function refreshOrderText() {
+      orderText.textContent = buildOrderText();
+    }
+
+    function openModal(card) {
+      activeProduct = {
+        product: card.dataset.product,
+        price: card.dataset.price
+      };
+      activeOrderId = makeOrderId();
+
+      modalProductTitle.textContent = activeProduct.product;
+      modalPrice.textContent = Number(activeProduct.price).toLocaleString('en-US') + ' EGP';
+      username.value = '';
+      copyBtn.innerHTML = '<span>Copy Ticket</span><b>▣</b>';
+      copyNote.textContent = 'Copy your ticket, open GameNest on Instagram, then paste it to the admin to complete your order.';
+      copyNote.classList.remove('copied');
+      refreshOrderText();
+
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden','false');
+      document.body.classList.add('modal-open');
+
+      setTimeout(() => username.focus(), 280);
+    }
+
+    function closeModal() {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden','true');
+      document.body.classList.remove('modal-open');
+    }
+
+    document.querySelectorAll('.order-btn').forEach(btn => {
+      btn.addEventListener('click', () => openModal(btn.closest('[data-product]')));
+    });
+
+    username.addEventListener('input', refreshOrderText);
+    document.querySelector('.modal-close').addEventListener('click', closeModal);
+    document.querySelector('.modal-backdrop').addEventListener('click', closeModal);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+    copyBtn.addEventListener('click', async () => {
+      refreshOrderText();
+      try {
+        await navigator.clipboard.writeText(orderText.textContent);
+        copyBtn.innerHTML = '<span>Copied!</span><b>✓</b>';
+        copyNote.textContent = 'Copied! Now open GameNest on Instagram and paste your ticket to the admin.';
+        copyNote.classList.add('copied');
+
+        setTimeout(() => {
+          copyBtn.innerHTML = '<span>Copy Ticket</span><b>▣</b>';
+          copyNote.textContent = 'Copy your ticket, open GameNest on Instagram, then paste it to the admin to complete your order.';
+          copyNote.classList.remove('copied');
+        }, 3000);
+      } catch {
+        const range = document.createRange();
+        range.selectNodeContents(orderText);
+        const sel = window.getSelection();
+        sel.removeAllRanges();
+        sel.addRange(range);
+        copyBtn.innerHTML = '<span>Select & Copy</span><b>↗</b>';
+      }
+    });
+
+    const menu = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menu.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('mobile-open');
+      menu.setAttribute('aria-expanded', open);
+      document.body.classList.toggle('menu-open', open);
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      navLinks.classList.remove('mobile-open');
+      menu.setAttribute('aria-expanded','false');
+      document.body.classList.remove('menu-open');
+    }));
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) { e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+    }));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if(entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }});
+    }, {threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', () => {
+        if (detail.open) document.querySelectorAll('details').forEach(other => { if(other !== detail) other.open = false; });
+      });
+    });
+
+    // ---- Custom cursor: pure black & white, long snake-style trail ----
+    const supportsFinePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (supportsFinePointer && !reducedMotion) {
+      document.documentElement.classList.add('has-custom-cursor');
+      const dot = document.getElementById('cursorDot');
+      const ring = document.getElementById('cursorRing');
+
+      // build a long chain of trailing segments — more + slower easing = a longer, smoother trail
+      const SEGMENTS = 34;
+      const trail = [];
+      for (let i = 0; i < SEGMENTS; i++) {
+        const seg = document.createElement('div');
+        seg.className = 'cursor-seg';
+        const size = Math.max(2, 13 - i * 0.33);
+        seg.style.width = size + 'px';
+        seg.style.height = size + 'px';
+        seg.style.opacity = Math.max(0, 0.78 - i * 0.022);
+        document.body.appendChild(seg);
+        trail.push({ el: seg, x: window.innerWidth / 2, y: window.innerHeight / 2 });
+      }
+
+      let mouseX = window.innerWidth / 2, mouseY = window.innerHeight / 2;
+      let ringX = mouseX, ringY = mouseY;
+      let visible = false;
+
+      window.addEventListener('mousemove', e => {
+        mouseX = e.clientX; mouseY = e.clientY;
+        dot.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+        if (!visible) {
+          dot.style.opacity = '1'; ring.style.opacity = '1';
+          trail.forEach(seg => seg.el.style.opacity = seg.el.style.opacity || '0.5');
+          visible = true;
+        }
+      });
+      document.addEventListener('mouseleave', () => {
+        dot.style.opacity = '0'; ring.style.opacity = '0';
+        trail.forEach(seg => seg.el.style.opacity = '0');
+        visible = false;
+      });
+
+      function animate() {
+        ringX += (mouseX - ringX) * 0.2;
+        ringY += (mouseY - ringY) * 0.2;
+        ring.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+
+        // each trail segment eases toward the one in front of it — a long, slow-follow chain
+        let targetX = mouseX, targetY = mouseY;
+        trail.forEach(seg => {
+          seg.x += (targetX - seg.x) * 0.26;
+          seg.y += (targetY - seg.y) * 0.26;
+          seg.el.style.transform = `translate(${seg.x}px, ${seg.y}px) translate(-50%, -50%)`;
+          targetX = seg.x; targetY = seg.y;
+        });
+
+        requestAnimationFrame(animate);
+      }
+      animate();
+
+      const hoverTargets = 'a, button, input, summary, .ticket-stub, label';
+      document.querySelectorAll(hoverTargets).forEach(el => {
+        el.addEventListener('mouseenter', () => { ring.classList.add('is-active'); dot.classList.add('is-active'); });
+        el.addEventListener('mouseleave', () => { ring.classList.remove('is-active'); dot.classList.remove('is-active'); });
+      });
+      document.addEventListener('mousedown', () => ring.classList.add('is-down'));
+      document.addEventListener('mouseup', () => ring.classList.remove('is-down'));
+    }
+  </script>
+</body>
+</html>
