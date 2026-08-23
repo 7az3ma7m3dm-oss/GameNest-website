@@ -368,14 +368,24 @@ p { margin: 0; }
 }
 .payment-wrap h2 { margin-top: 10px; }
 .payment-wrap p { color: var(--sand); max-width: 40ch; margin-top: 14px; font-family: var(--font-mono); font-size: 0.9rem; }
-.payment-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border: 1px solid var(--paper); }
-.payment-grid div {
-  background: transparent; color: var(--paper); padding: 18px 22px;
-  font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase;
-  min-width: 130px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+.payment-grid { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--paper); min-width: 260px; }
+.payment-chip {
+  display: flex; align-items: center; gap: 16px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  transition: background 0.4s cubic-bezier(.16,.84,.44,1);
 }
-.payment-grid div:nth-child(2n) { border-right: none; }
-.payment-grid strong { display: block; font-family: var(--font-display); font-size: 1.2rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0; margin-top: 2px; }
+.payment-chip:last-child { border-bottom: none; }
+.payment-chip:hover { background: var(--ink-2); }
+.payment-mark {
+  font-family: var(--font-mono); font-size: 0.7rem; color: var(--sand-dim);
+  border: 1px solid var(--line); width: 26px; height: 26px;
+  display: grid; place-items: center; flex-shrink: 0;
+}
+.payment-chip strong {
+  font-family: var(--font-display); font-size: 1.15rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.01em; color: var(--paper);
+}
 @media (max-width: 720px) { .payment-wrap { padding: 30px 24px; } }
 
 /* ============ FAQ ============ */
